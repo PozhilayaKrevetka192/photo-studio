@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>aperture</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header__container">
+                <img class="logo" src="./public/logo.png" alt="Logo">
+
+                <nav class="header__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#">Business areas</a></li>
+                        <li class="menu__item"><a href="#">Featured images</a></li>
+                        <li class="menu__item"><a href="#">Gear cage</a></li>
+                        <li class="menu__item"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <button class="header__button button">Get template</button>
+                    <button class="burger" onclick="toggleMenu()"><span></span></button>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <section class="aperture">
+                <div class="aperture__content">
+                    <div class="aperture__text">
+                        <h4 class="tac">Photographer & Filmmaker</h4>
+                        <h1 class="tac">Aperture Studios</h1>
+                        <p class="tac">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>    
+                    </div>
+                    <div class="settings">
+                        <ul>
+                            <li class="settings__item shutter-icon">1/2000s</li>
+                            <li class="settings__item aperture-icon">f/11</li>
+                            <li class="settings__item iso-icon">100</li>
+                            <li class="settings__item location-icon">Iceland</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="affairs">
+                <div class="affairs__container">
+                    <div class="affairs__text">
+                        <h2>What we do.</h2>
+                        <p class="subtitle">The areas that we're specialized in.</p>
+                    </div>
+                    <div class="affairs__cards">
+                        <div class="affairs__card" id="product-photo">
+                            <div class="card__text">
+                                <h4>Product Photography</h4>
+                                <p>Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                                <button class="button read-more">Read more</button>
+                            </div>
+                        </div>
+                        <div class="affairs__card" id="architecture-photo">
+                            <div class="card__text">
+                                <h4>Architecture Photography</h4>
+                                <p>Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
+                                <button class="button read-more">Read more</button>
+                            </div>
+                        </div>
+                        <div class="affairs__card" id="drone-photo">
+                            <div class="card__text">
+                                <h4>Drone Photography</h4>
+                                <p>Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                                <button class="button read-more">Read more</button>
+                            </div>
+                        </div>
+                        <div class="affairs__card" id="wildlife-photo">
+                            <div class="card__text">
+                                <h4>Wildlife Photography</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
+                                <button class="button read-more">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="work">
+                <div class="photo-block sunset">
+                    <div class="photo-block__content">
+                        <div class="photo-block__text">
+                            <h4>Sunset at Mount Fuji</h4>
+                            <p>Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
+                        </div>
+                    </div>
+                    <div class="settings">
+                        <ul>
+                            <li class="settings__item shutter-icon">1''</li>
+                            <li class="settings__item aperture-icon">f/16</li>
+                            <li class="settings__item iso-icon">400</li>
+                            <li class="settings__item location-icon">Japan</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tools">
+                    <div class="tools__content">
+                        <div class="tools__text">
+                            <h4>The Gear cage</h4>
+                            <h3>The tools that we use.</h3>
+                            <p>The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.</p>
+                            <button class="button read-more check-it-out">Check it out</button>
+                        </div>
+                    </div>
+                    <div class="tools__image">
+                        <div class="settings">
+                            <ul>
+                                <li class="settings__item shutter-icon">0,8''</li>
+                                <li class="settings__item aperture-icon">f/5,6</li>
+                                <li class="settings__item iso-icon">100</li>
+                                <li class="settings__item location-icon">Sweden</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-block monstera">
+                    <div class="photo-block__content">
+                        <div class="photo-block__text">
+                            <h4>Monstera Leafs</h4>
+                            <p>Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
+                        </div>
+                    </div>
+                    <div class="settings">
+                        <ul>
+                            <li class="settings__item shutter-icon">1/400s</li>
+                            <li class="settings__item aperture-icon">f/3,5</li>
+                            <li class="settings__item iso-icon">100</li>
+                            <li class="settings__item location-icon">Costa Rica</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clients">
+                    <div class="clients__container">
+                        <div class="clients__text">
+                            <h2>Past clients</h2>
+                            <p class="subtitle">Trusted by your favourite companies</p>
+                        </div>
+                        <div class="clients__images">
+                            <img src="./public/clients-images/hllie-playes.png" alt="HillePlayes">
+                            <img src="./public/clients-images/riksgransen.png" alt="Riksgransen">
+                            <img src="./public/clients-images/studio-cai.png" alt="Studio Cai">
+                            <img src="./public/clients-images/chill-industries.png" alt="ChillIndustries">
+                            <img src="./public/clients-images/stockholm.png" alt="Stockholm">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-block himalayas">
+                    <div class="photo-block__content">
+                        <div class="photo-block__text">
+                            <h4>Star fall in the Himalayas</h4>
+                            <p>Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</p>
+                        </div>
+                    </div>
+                    <div class="settings">
+                        <ul>
+                            <li class="settings__item shutter-icon">6''</li>
+                            <li class="settings__item aperture-icon">f/11</li>
+                            <li class="settings__item iso-icon">800</li>
+                            <li class="settings__item location-icon">Nepal</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="help">
+                    <div class="help__container">
+                        <div class="help__text">
+                            <h2>Need help with photography or videography?</h2>
+                            <p class="subtitle">We're here for you!</p>
+                            <button class="button read-more">Get in touch</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer__container">
+                <div class="footer__info">
+                    <div class="info__text">
+                        <img class="logo" id="footer-logo" src="./public/logo.png" alt="aperture">
+                        <p>Photographers & videographers capturing the world around us.</p>
+                    </div>
+                    <nav class="footer__navigation">
+                        <div class="navigation__block">
+                            <h4>Business areas</h4>
+                            <ul>
+                                <li><a href="#">Product Photography</a></li>
+                                <li><a href="#">Architecture Photography</a></li>
+                                <li><a href="#">Drone Photography</a></li>
+                                <li><a href="#">Wildlife Photography</a></li>
+                            </ul>
+                        </div>
+                        <div class="navigation__block">
+                            <h4>Pages</h4>
+                            <ul>
+                                <li><a href="#">Gear cage</a></li>
+                                <li><a href="#">Featured images</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Style guide</a></li>
+                                <li><a href="#">Instructions</a></li>
+                                <li><a href="#">Changelog</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer__subsribe">
+                    <div class="subscribe__text">
+                        <h4>Subscribe to our newsletter</h4>
+                        <p>Read about all the things we do.</p>
+                    </div>
+                    <form action="" class="subscribe__form">
+                        <input type="email">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+                <div class="footer__copyright">
+                    <p>© Aperture Photography, Inc. All rights reserved. Licensing.</p>
+                    <div class="copyright__social-media">
+                        <a href="#"><img src="./public/social-media-icons/twitter.png" alt="Twitter" class="icon"></a>
+                        <a href="#"><img src="./public/social-media-icons/instagram.png" alt="Instagram" class="icon"></a>
+                        <a href="#"><img src="./public/social-media-icons/facebook.png" alt="Facebook" class="icon"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
